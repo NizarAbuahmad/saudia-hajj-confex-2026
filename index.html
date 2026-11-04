@@ -5,7 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>السعودية للحج والعمرة — الراعي الاستراتيجي لمؤتمر ومعرض الحج ٢٠٢٦</title>
 <meta name="description" content="إحسان: نتولى كل شيء، لتتفرغ للعبادة. السعودية للحج والعمرة، الراعي الاستراتيجي لمؤتمر ومعرض الحج ٢٠٢٦. زوروا جناحنا C62 في جدة سوبر دوم من ٨ إلى ١١ نوفمبر.">
+<meta property="og:title" content="السعودية للحج والعمرة — الراعي الاستراتيجي لمؤتمر ومعرض الحج ٢٠٢٦">
+<meta property="og:description" content="إحسان: نتولى كل شيء، لتتفرغ للعبادة. الجناح C62 في جدة سوبر دوم، ٨–١١ نوفمبر ٢٠٢٦.">
+<meta property="og:image" content="https://nizarabuahmad.github.io/saudia-hajj-confex-2026/assets/img/arafat.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <style>
+
 @font-face{font-family:'Saudia Sans';src:url(assets/fonts/SaudiaSans-Regular.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:'Saudia Sans';src:url(assets/fonts/SaudiaSans-Medium.woff2) format('woff2');font-weight:500;font-display:swap}
 @font-face{font-family:'Saudia Sans';src:url(assets/fonts/SaudiaSans-SemiBold.woff2) format('woff2');font-weight:600;font-display:swap}
@@ -30,6 +36,14 @@ h2+.lead{margin-top:14px}
 .btn.out{border-color:var(--green);color:var(--green)}.btn.out:hover{background:var(--green);color:#fff}
 .pat{position:relative;overflow:hidden}.kl{position:absolute;width:300px;height:300px;background:url(assets/brand/key_k_makkah_p.png) 0 0/300px;pointer-events:none}.kl.w{background-image:url(assets/brand/key_k_makkah_w.png)}.kl.g{background-image:url(assets/brand/key_k_makkah_g.png)}.pat>.wrap{position:relative}@media(max-width:700px){.kl{width:180px;height:180px;background-size:180px}}
 
+.mbar{display:none}
+@media(max-width:700px){
+.mbar{display:flex;align-items:center;justify-content:space-between;gap:12px;position:fixed;inset-inline:0;bottom:0;z-index:55;background:#fff;border-top:3px solid var(--green);padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));font-weight:600;color:var(--green)}
+.mbar small{display:block;font-weight:400;color:#4a4c44;font-size:13px}
+.mbar .btn{padding:11px 20px;font-size:15px}
+body{padding-bottom:76px}
+body #snd{bottom:calc(88px + env(safe-area-inset-bottom,0px))}}
+
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(0,105,55,.97);backdrop-filter:blur(8px);color:#fff}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
@@ -39,30 +53,33 @@ nav ul a{opacity:.85}nav ul a:hover{opacity:1;color:var(--palm)}
 nav .btn{padding:10px 18px;font-size:15px}
 @media(max-width:900px){nav ul{display:none}}
 
-/* hero */
-.hero{position:relative;min-height:calc(100vh - 68px);display:flex;align-items:center;color:#fff;background:var(--green) url(assets/img/arrive3.jpg) center/cover;padding:70px 0}
-.hero{overflow:hidden}
-.hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to left,rgba(0,105,55,.92) 0,rgba(0,105,55,.74) 55%,rgba(0,105,55,.15) 100%)}
-@media(max-width:900px){.hero::before{background:rgba(0,105,55,.7)}}
+/* hero: green text panel + untouched footage, keyline tile on the seam (brand layout) */
+.hero{background:var(--green);color:#fff}
+.hero-in{position:relative;display:grid;grid-template-columns:5fr 7fr;min-height:calc(100vh - 68px - 72px);overflow:hidden}
+.hmsg{position:relative;z-index:1;display:flex;align-items:center;padding:64px clamp(24px,4vw,64px)}
+.hmsg .in{max-width:560px}
+.hmedia{position:relative;background:url(assets/img/arrive3.jpg) center/cover}
+.hbg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 @media(prefers-reduced-motion:reduce){.hbg{display:none}}
-.hero .wrap{position:relative;z-index:2;width:100%}
-.badge{display:inline-flex;align-items:center;gap:12px;background:var(--palm);color:var(--emerald);padding:9px 20px 7px;font-weight:700;font-size:clamp(15px,2vw,19px)}
+.hero-in .kl{z-index:2;inset-inline-end:auto;inset-inline-start:calc(41.667% - 150px);bottom:-70px}
+.badge{display:inline-flex;align-items:center;gap:12px;background:var(--palm);color:var(--emerald);padding:9px 20px 7px;font-weight:700;font-size:clamp(14px,1.6vw,17px)}
 .badge .en{display:inline;font-size:.85em;opacity:1;font-weight:600}
-.hero h1{font-size:clamp(34px,5.6vw,68px);line-height:1.12;font-weight:400;margin:22px 0 4px}
-.hero h1 .en{font-size:.38em;color:var(--palm);font-weight:500;margin-top:10px;opacity:1}
-.hero .msg{font-size:clamp(26px,4.2vw,50px);line-height:1.35;font-weight:400;max-width:860px;margin-top:22px;color:#fff;border-inline-start:5px solid var(--palm);padding-inline-start:20px}
-.hero .msg b{color:var(--palm);font-weight:700}
-.hero .msg .en{font-size:.38em;margin-top:10px;color:#e9f4ed;opacity:1}
-.hero p.tag{font-size:clamp(17px,2vw,22px);max-width:640px;margin-top:20px;color:#e9f4ed}
-.chips{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.chip{border:1px solid rgba(255,255,255,.35);padding:10px 18px;font-weight:600;font-size:17px;background:rgba(0,0,0,.18)}
-.chip b{color:var(--palm);font-weight:700}
-.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
-.count{display:flex;gap:14px;margin-top:40px}
-.count div{min-width:84px;text-align:center;background:rgba(255,255,255,.1);border-top:3px solid var(--palm);padding:10px 8px}
-.count strong{display:block;font-size:34px;line-height:1.2;font-variant-numeric:tabular-nums}
-.count span{font-size:13px;opacity:.85}
+.ev{margin-top:26px;font-size:clamp(18px,1.8vw,22px);font-weight:500;line-height:1.5}
+.ev .en{font-size:.78em;color:var(--wadi);opacity:1;font-weight:400}
+.hero h1{margin-top:22px;font-size:clamp(30px,3.7vw,54px);line-height:1.3;font-weight:400}
+.hero h1 .ih{display:block;color:var(--palm);font-size:1.35em;line-height:1.15;margin-bottom:6px}
+.hero h1 .en{font-size:.36em;margin-top:14px;color:#e9f4ed;opacity:1;line-height:1.5}
+.info{margin-top:26px;display:flex;flex-wrap:wrap;gap:6px 14px;font-size:16.5px;font-weight:500}
+.info span+span::before{content:"·";margin-inline-end:14px;color:var(--palm)}
+.info a{border-bottom:1px solid var(--palm)}.info a:hover{color:var(--palm)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.count{background:#fff;border-bottom:1px solid #e4dfd2;color:var(--ink)}
+.count .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px;min-height:72px;padding-block:10px}
+.count .lb{font-weight:700;color:var(--green)}
+.count div.u{display:flex;align-items:baseline;gap:6px}
+.count strong{font-size:30px;line-height:1;color:var(--green);font-weight:700;font-variant-numeric:tabular-nums}
+.count span{font-size:14px;color:#4a4c44}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;min-height:0}.hmedia{order:-1;aspect-ratio:16/10}.hero-in .kl{inset-inline-start:auto;inset-inline-end:-90px;top:calc(min(100vw,900px)*.625 - 90px);bottom:auto}.hmsg{padding:44px 20px 52px}}
 
 /* sponsor band */
 .sponsor{background:var(--palm);color:var(--emerald);padding:0;overflow:hidden}
@@ -95,15 +112,20 @@ nav .btn{padding:10px 18px;font-size:15px}
 @media(max-width:900px){.grid4{grid-template-columns:1fr 1fr}.invite{grid-template-columns:1fr}.invite img{width:130px}}
 @media(max-width:520px){.grid4{grid-template-columns:1fr}}
 
+/* photo band: untouched photo, message in the corner on a green tile */
+.band{position:relative;min-height:62vh;display:flex;align-items:flex-end;background:url(assets/img/arafat.jpg) center/cover;padding:0}
+.band .msg{position:relative;background:var(--green);color:#fff;padding:34px clamp(24px,4vw,56px);max-width:min(620px,100%)}
+.band .msg h2{color:#fff;font-weight:400;font-size:clamp(30px,4vw,52px)}
+.band .msg .en{color:var(--palm);opacity:1;margin-top:10px;font-size:.4em}
+.band .kl{inset-inline-start:auto;inset-inline-end:-150px;top:-150px;opacity:.9}
 /* why */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
-.why{border:1px solid #e4dfd2;padding:30px 26px;position:relative;transition:.25s;background:#fff}
+.why{border:1px solid #e4dfd2;position:relative;transition:.25s;background:#fff;overflow:hidden}
 .why:hover{border-color:var(--green);transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,105,55,.12)}
-.why .n{font-size:46px;font-weight:700;color:var(--palm);line-height:1}
-.why h3{font-size:22px;color:var(--green);margin:14px 0 8px;font-weight:700}
+.why .ph{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.why .b{padding:22px 24px 28px}
+.why h3{font-size:22px;color:var(--green);margin-bottom:8px;font-weight:700}
 .why p{color:#4a4c44;font-size:16.5px}
-.why.hl{background:var(--green);color:#fff;border-color:var(--green)}
-.why.hl h3{color:#fff}.why.hl p{color:#d8ecdf}
 @media(max-width:900px){.grid3{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.grid3{grid-template-columns:1fr}}
 
@@ -178,7 +200,7 @@ dialog#lb::backdrop{background:#000}
 .sg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
 .sg a:last-child{grid-column:1/-1;background:var(--green);border-top-color:var(--palm)}.sg a:last-child svg,.sg a:last-child b{color:#fff}.sg a:last-child small{color:#d8ecdf}
 @media(max-width:900px){.sg{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.sg{grid-template-columns:1fr}}
-#snd{position:fixed;inset-inline-start:max(16px,env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;gap:10px;background:var(--green);color:#fff;border:2px solid var(--palm);padding:10px 18px;font:600 15px/1 'Saudia Sans',system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,50,22,.35)}
+#snd{position:fixed;inset-inline-end:max(16px,env(safe-area-inset-left,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;gap:10px;background:var(--green);color:#fff;border:2px solid var(--palm);padding:10px 18px;font:600 15px/1 'Saudia Sans',system-ui,sans-serif;cursor:pointer;box-shadow:0 8px 24px rgba(0,50,22,.35)}
 #snd:hover{background:var(--emerald)}#snd:focus-visible{outline:3px solid var(--wadi);outline-offset:2px}
 #snd svg{width:22px;height:22px;flex:none}#snd .off{display:none}#snd[aria-pressed=false] .on{display:none}#snd[aria-pressed=false] .off{display:block}
 .sg a{display:flex;align-items:center;gap:14px;background:#fff;border-top:4px solid var(--green);padding:20px;transition:.2s}
@@ -261,27 +283,29 @@ footer img{height:40px;width:auto}
 </nav>
 
 <header class="hero" id="top">
-  <video class="hbg" id="hbg" autoplay muted playsinline preload="auto" poster="assets/img/arrive3.jpg" src="assets/video/arafat.mp4" aria-hidden="true"></video>
-  <div class="wrap">
-    <span class="badge rv">الراعي الاستراتيجي <span class="en">· Strategic Sponsor</span></span>
-    <h1 class="rv">مؤتمر ومعرض الحج ٢٠٢٦<span class="en">Hajj Conference &amp; Exhibition 2026 · 6th Edition</span></h1>
-    <p class="msg rv"><b>إحسان:</b> نتولى كل شيء، لتتفرغ للعبادة<span class="en">Ihsan: We take care of everything, so you can devote yourself to worship.</span></p>
-    <p class="tag rv">تدعوكم السعودية للحج والعمرة إلى جناحها لتروا كيف نرافق ضيوف الرحمن، من التخطيط وحتى العودة الآمنة.</p>
-    <div class="chips rv">
-      <div class="chip"><b>٨ – ١١</b> نوفمبر ٢٠٢٦</div>
-      <div class="chip"><b>٩:٣٠ ص – ٩:٣٠ م</b></div>
-      <a class="chip" target="_blank" rel="noopener" href="https://maps.app.goo.gl/yaCW6DE4mPkLuLTw7">جدة سوبر دوم</a>
-      <div class="chip">الجناح <b>C62</b></div>
+  <div class="hero-in">
+    <i class="kl p" aria-hidden="true"></i>
+    <div class="hmsg">
+      <div class="in">
+        <span class="badge">الراعي الاستراتيجي <span class="en">· Strategic Sponsor</span></span>
+        <p class="ev">مؤتمر ومعرض الحج ٢٠٢٦<span class="en">Hajj Conference &amp; Exhibition 2026 · 6th Edition</span></p>
+        <h1 ><span class="ih">إحسان:</span>نتولى كل شيء، لتتفرغ للعبادة<span class="en">Ihsan: We take care of everything, so you can devote yourself to worship.</span></h1>
+        <p class="info"><span>٨ – ١١ نوفمبر ٢٠٢٦</span><span>٩:٣٠ ص – ٩:٣٠ م</span><span><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/yaCW6DE4mPkLuLTw7">جدة سوبر دوم</a></span><span>الجناح C62</span></p>
+        <div class="cta">
+          <a class="btn pri" href="#details">زوروا جناحنا C62</a>
+          <a class="btn sec" href="#story">شاهدوا القصة</a>
+        </div>
+      </div>
     </div>
-    <div class="cta rv">
-      <a class="btn pri" href="#details">زوروا جناحنا</a>
-      <a class="btn sec" href="#story">شاهدوا القصة</a>
-    </div>
-    <div class="count rv" id="count" aria-live="off" hidden>
-      <div><strong id="cd">٠</strong><span>يوم</span></div>
-      <div><strong id="ch">٠</strong><span>ساعة</span></div>
-      <div><strong id="cm">٠</strong><span>دقيقة</span></div>
-      <div><strong id="cs">٠</strong><span>ثانية</span></div>
+    <div class="hmedia"><video class="hbg" id="hbg" autoplay muted playsinline preload="auto" poster="assets/img/arrive3.jpg" src="assets/video/arafat.mp4" aria-hidden="true"></video></div>
+  </div>
+  <div class="count" id="count" aria-live="off" hidden>
+    <div class="wrap">
+      <span class="lb">يفتح المعرض أبوابه بعد</span>
+      <div class="u"><strong id="cd">٠</strong><span>يوم</span></div>
+      <div class="u"><strong id="ch">٠</strong><span>ساعة</span></div>
+      <div class="u"><strong id="cm">٠</strong><span>دقيقة</span></div>
+      <div class="u"><strong id="cs">٠</strong><span>ثانية</span></div>
     </div>
   </div>
 </header>
@@ -303,7 +327,7 @@ footer img{height:40px;width:auto}
 <section class="vid" id="story">
   <div class="wrap">
     <span class="kicker">قصة الموسم</span>
-    <h2 class="rv">ضيف الرحمن ضيفنا</h2>
+    <h2 class="rv">من الوصول إلى العودة</h2>
     <p class="lead rv">شاهدوا كيف رافقنا ضيوف الرحمن في كل محطة، من الوصول إلى العودة.</p>
     <div class="stage rv">
       <div class="player"><video id="main" controls playsinline preload="metadata" poster="assets/video/poster.jpg" src="assets/video/recap.mp4">متصفحكم لا يدعم تشغيل الفيديو.</video></div>
@@ -356,14 +380,20 @@ footer img{height:40px;width:auto}
     <h2 class="rv">إحسان: نتولى كل شيء<span class="en">So you can devote yourself to worship</span></h2>
     <p class="lead rv">لتتفرغ للعبادة. من لحظة الوصول إلى المشاعر المقدسة حتى العودة، فرق السعودية للحج والعمرة حاضرة في الميدان، وهذا ما ترونه في الجناح C62.</p>
     <div class="grid3">
-      <div class="why hl rv"><div class="n">٠١</div><h3>نستقبلكم</h3><p>ضيافة سعودية أصيلة من قهوة وتمر ومشروبات باردة، وسفراء يرحبون بالحجاج منذ وصولهم.</p></div>
-      <div class="why rv"><div class="n">٠٢</div><h3>نرشدكم</h3><p>مرشدون يرافقون المجموعات في المسارات وعند الجمرات، ويوضحون جداول التفويج والحافلات.</p></div>
-      <div class="why rv"><div class="n">٠٣</div><h3>نؤويكم</h3><p>مخيمات ومرافق مجهزة في منى وعرفات، واستراحات مريحة في مزدلفة.</p></div>
-      <div class="why rv"><div class="n">٠٤</div><h3>ننقلكم</h3><p>حافلات وتنسيق ميداني متواصل بين المقرات والمشاعر، لتصلوا في موعدكم بيسر.</p></div>
-      <div class="why rv"><div class="n">٠٥</div><h3>نحميكم</h3><p>عيادة طبية، ومحطات تبريد ومراوح رذاذ، ومظلات ومناشف باردة تقيكم حرارة الشمس.</p></div>
-      <div class="why rv"><div class="n">٠٦</div><h3>نتابع التفاصيل</h3><p>مساندة كبار السن، ومكتب للمفقودات، ومتابعة جودة الأطعمة وسلامتها، وحقائب عناية شخصية.</p></div>
+      <div class="why rv"><img class="ph" src="assets/img/g-arrive-4.jpg" alt="" loading="lazy"><div class="b"><h3>نستقبلكم</h3><p>ضيافة سعودية أصيلة من قهوة وتمر ومشروبات باردة، وسفراء يرحبون بالحجاج منذ وصولهم.</p></div></div>
+      <div class="why rv"><img class="ph" src="assets/img/arafat.jpg" alt="" loading="lazy"><div class="b"><h3>نرشدكم</h3><p>مرشدون يرافقون المجموعات في المسارات وعند الجمرات، ويوضحون جداول التفويج والحافلات.</p></div></div>
+      <div class="why rv"><img class="ph" src="assets/img/g-depart-2.jpg" alt="" loading="lazy"><div class="b"><h3>نؤويكم</h3><p>مخيمات ومرافق مجهزة في منى وعرفات، واستراحات مريحة في مزدلفة.</p></div></div>
+      <div class="why rv"><img class="ph" src="assets/img/makkah.jpg" alt="" loading="lazy"><div class="b"><h3>ننقلكم</h3><p>حافلات وتنسيق ميداني متواصل بين المقرات والمشاعر، لتصلوا في موعدكم بيسر.</p></div></div>
+      <div class="why rv"><img class="ph" src="assets/img/g-lounge-1.jpg" alt="" loading="lazy"><div class="b"><h3>نحميكم</h3><p>عيادة طبية، ومحطات تبريد ومراوح رذاذ، ومظلات ومناشف باردة تقيكم حرارة الشمس.</p></div></div>
+      <div class="why rv"><img class="ph" src="assets/img/g-dine-1.jpg" alt="" loading="lazy"><div class="b"><h3>نتابع التفاصيل</h3><p>مساندة كبار السن، ومكتب للمفقودات، ومتابعة جودة الأطعمة وسلامتها، وحقائب عناية شخصية.</p></div></div>
     </div>
     <p class="note rv">مقر عمليات الحج في مكة المكرمة يربط تفاصيل الرحلة بالجهات المعنية · معتمدون من وزارة الحج والعمرة · أكثر من ٨٠ عاماً في خدمة المسافرين</p>
+  </div>
+</section>
+
+<section class="band" aria-label="ضيف الرحمن ضيفنا">
+  <div class="msg pat">
+    <h2 class="rv">ضيف الرحمن ضيفنا<span class="en">A Guest of Allah is a Guest of Saudia</span></h2>
   </div>
 </section>
 
@@ -471,6 +501,7 @@ footer img{height:40px;width:auto}
   </div>
 </section>
 
+<div class="mbar"><span>الجناح C62<small>جدة سوبر دوم · ٨ – ١١ نوفمبر</small></span><a class="btn grn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/yaCW6DE4mPkLuLTw7">الموقع</a></div>
 <audio id="amb" loop preload="none" src="assets/audio/hajj-ambient.mp3"></audio>
 <button id="snd" type="button" aria-pressed="false" aria-label="تشغيل أجواء الحج">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.500v5h3.500l5 4v-13l-5 4z" fill="currentColor"/><path class="on" d="M16 9a4 4 0 0 1 0 6M18.500 6.500a8 8 0 0 1 0 11"/><path class="off" d="M16 9.500l5 5M21 9.500l-5 5"/></svg>
