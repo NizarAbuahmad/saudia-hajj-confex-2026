@@ -34,4 +34,4 @@ Open http://127.0.0.1:8793. Serve it over HTTP; opening the file directly can bl
 
 ## Licensing
 
-Saudia Sans, the logos and the footage belong to Saudia / the client. Keep this repository private.
+Saudia Sans, the logos and the footage belong to Saudia / the client and are included here for this page only. They are not licensed for reuse.
